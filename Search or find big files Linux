@@ -1,0 +1,1 @@
+find /home/*/public_html/ -type f -size +500000k -exec ls -lh {} \; | awk '{ print $9 ": " $5 }'
