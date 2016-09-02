@@ -1,0 +1,5 @@
+yum -y install system-config-firewall
+cp /usr/share/system-config-firewall/fw_n* ~
+yum -y remove system-config-firewall
+mv fw_n* /usr/share/system-config-firewall/
+system-config-firewall-tui
